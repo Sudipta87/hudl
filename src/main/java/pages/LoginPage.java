@@ -21,14 +21,6 @@ public class LoginPage {
     WebElement profile;
 
 
-    //    @BeforeSuite
-//    public void setChrome() {
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Prashant\\Downloads\\chromedriver_win32\\chromedriver.exe");
-//        driver = new ChromeDriver();
-//        driver.manage().window().maximize();
-//        driver.get(PageConstants.url);
-//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//    }
 public LoginPage(WebDriver driver)
     {
         this.driver=driver;
@@ -38,17 +30,15 @@ public LoginPage(WebDriver driver)
     public void clickLoginSideBtn() {
         WebElement loginBtn = driver.findElement(By.xpath("(//a[text()='Log in'])[1]"));
         loginBtn.click();
-//        currentUrl = driver.getCurrentUrl();
-//        Assert.assertEquals(currentUrl, PageConstants.loginUrl);
     }
 
-    public void enterCredentials() throws InterruptedException {
-        Thread.sleep(3000);
-         uName = driver.findElement(By.id("email"));
-         pass = driver.findElement(By.id("password"));
-        uName.sendKeys("sudiptaroy1987@gmail.com");
-        pass.sendKeys("Yaashika@2021");
-    }
+//    public void enterCredentials() throws InterruptedException {
+//        Thread.sleep(3000);
+//         uName = driver.findElement(By.id("email"));
+//         pass = driver.findElement(By.id("password"));
+//        uName.sendKeys("sudiptaroy1987@gmail.com");
+//        pass.sendKeys("Yaashika@2021");
+//    }
     public void logout() throws InterruptedException {
         Actions act=new Actions(driver);
 
