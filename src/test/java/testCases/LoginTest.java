@@ -83,7 +83,7 @@ public class LoginTest extends GetData {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-              excl = new ExcelReader(PageConstants.excelPath);
+              excl = new ExcelReader(PageConstants.excelPath+"HudlData.xlsx");
     }
     catch(Exception e)
     {
